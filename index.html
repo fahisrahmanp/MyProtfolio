@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahis Rahman P — Python Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Progress bar -->
+<div id="scroll-progress"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <span class="mobile-close" id="mobile-close">✕</span>
+  <a href="#hero" onclick="closeMobileMenu()">Home</a>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+  <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- Navbar -->
+<nav>
+  <div class="nav-logo">FR.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="theme-toggle" id="theme-toggle" title="Toggle theme"></div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="open-badge">
+      <div class="dot-pulse"></div>
+      Currently Open to Work
+    </div>
+    <p class="hero-greeting">Hi there 👋, I'm</p>
+    <h1 class="hero-name">Fahis<br><span>Rahman P</span></h1>
+    <p class="hero-title">Python Full Stack Developer</p>
+    <div class="typing-wrap">
+      &gt; <span id="typing-text"></span><span class="cursor-blink">_</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        View Projects
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Contact Me
+      </a>
+      <a href="https://drive.google.com/file/d/1cA_jyDRjcZ6wYEBUExw05IGw5Wz8yb8U/view?usp=drive_link" class="btn btn-ghost" id="">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-card reveal">
+      <div class="avatar-ring">
+        <div class="avatar-inner"><img src="/asset/fahis.jpg" alt="Fahis Rahman P" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;"></div>
+      </div>
+      <div class="about-card-name">Fahis Rahman P</div>
+      <div class="about-card-role">Python Full Stack Developer · Kerala, India</div>
+      <div class="about-card-divider"></div>
+      <div class="about-card-stat">
+        <div class="stat-item">
+          <div class="stat-num">1+</div>
+          <div class="stat-label">Years Exp</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Internships</div>
+        </div>
+      </div>
+      <div class="about-tags">
+        <span class="tag">Django</span>
+        <span class="tag">Python</span>
+        <span class="tag">React</span>
+        <span class="tag">REST APIs</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">PostgreSQL</span>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Crafting <span>scalable</span> web experiences</h2>
+      <div class="about-text" style="margin-top:1.5rem">
+        <p>I'm a <strong>Python Full Stack Developer</strong> based in Kerala, India, passionate about building robust, scalable web applications that blend powerful backend architecture with intuitive user interfaces.</p>
+        <p>My core expertise lies in <strong>Django & REST APIs</strong>, where I design clean, performant systems. On the frontend, I bring ideas to life using <strong>React, Bootstrap, and modern CSS</strong>—always with a sharp eye for user experience.</p>
+        <p>I'm constantly exploring new technologies, currently diving deeper into cloud deployments, containerization, and advanced API patterns. I believe great software is both technically sound and a pleasure to use.</p>
+      </div>
+      <div class="about-ctas" style="margin-top:2rem">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="section-header reveal">
+    <div class="section-label">Technical Skills</div>
+    <h2 class="section-title">My <span>Tech Stack</span></h2>
+    <p class="section-sub">Technologies I work with to build full-stack applications from database to deployment.</p>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-category reveal reveal-delay-1">
+      <div class="skill-cat-icon">⚡</div>
+      <div class="skill-cat-title">Languages</div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span class="skill-bar-name">Python</span><span class="skill-bar-pct">92%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span class="skill-bar-name">JavaScript</span><span class="skill-bar-pct">78%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span class="skill-bar-name">HTML / CSS</span><span class="skill-bar-pct">88%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div>
+      </div>
+    </div>
+    <div class="skill-category reveal reveal-delay-2">
+      <div class="skill-cat-icon">🔧</div>
+      <div class="skill-cat-title">Backend</div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span class="skill-bar-name">Django</span><span class="skill-bar-pct">90%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span class="skill-bar-name">REST APIs / JWT</span><span class="skill-bar-pct">85%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-label"><span class="skill-bar-name">Flask</span><span class="skill-bar-pct">72%</span></div>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="72"></div></div>
+      </div>
+    </div>
+    <div class="skill-category reveal reveal-delay-3">
+      <div class="skill-cat-icon">🎨</div>
+      <div class="skill-cat-title">Frontend</div>
+      <div class="skill-bubbles">
+        <span class="skill-bubble">React</span>
+        <span class="skill-bubble">Bootstrap</span>
+        <span class="skill-bubble">Tailwind CSS</span>
+        <span class="skill-bubble">HTML5</span>
+        <span class="skill-bubble">CSS3</span>
+        <span class="skill-bubble">jQuery</span>
+        <span class="skill-bubble">AJAX</span>
+      </div>
+    </div>
+    <div class="skill-category reveal reveal-delay-4">
+      <div class="skill-cat-icon">🗄️</div>
+      <div class="skill-cat-title">Databases & Tools</div>
+      <div class="skill-bubbles">
+        <span class="skill-bubble">MySQL</span>
+        <span class="skill-bubble">PostgreSQL</span>
+        <span class="skill-bubble">MongoDB</span>
+        <span class="skill-bubble">SQLite</span>
+        <span class="skill-bubble">Git / GitHub</span>
+        <span class="skill-bubble">VS Code</span>
+        <span class="skill-bubble">Linux</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="section-header reveal">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <p class="section-sub">Real-world applications I've built — from e-commerce to professional service systems.</p>
+  </div>
+  <div class="projects-grid">
+    <!-- GoalGear -->
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-header">
+        <div class="project-bg-icon">🛒</div>
+        <span class="project-tag">Full Stack</span>
+      </div>
+      <div class="project-body">
+        <div class="project-name">GoalGear</div>
+        <div class="project-desc">A complete e-commerce platform for sports equipment with full cart management, order tracking, user authentication, and admin dashboard. Built for performance and scale.</div>
+        <div class="project-tech">
+          <span class="tech-pill">Django</span>
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">Bootstrap</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">JavaScript</span>
+        </div>
+        <div style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1rem;">
+          <span style="margin-right:1rem">✓ Cart & Orders</span>
+          <span style="margin-right:1rem">✓ Authentication</span>
+          <span>✓ Admin Panel</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+          <a href="https://github.com/fahisrahman" class="project-link secondary" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Jurist -->
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-header">
+        <div class="project-bg-icon">⚖️</div>
+        <span class="project-tag">Backend + UI</span>
+      </div>
+      <div class="project-body">
+        <div class="project-name">Jurist</div>
+        <div class="project-desc">A professional lawyer booking and management system. Streamlines the client-attorney appointment workflow with a clean, intuitive UI and robust backend logic.</div>
+        <div class="project-tech">
+          <span class="tech-pill">Django</span>
+          <span class="tech-pill">SQLite</span>
+          <span class="tech-pill">HTML/CSS</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Bootstrap</span>
+        </div>
+        <div style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1rem;">
+          <span style="margin-right:1rem">✓ Booking System</span>
+          <span style="margin-right:1rem">✓ Lawyer Profiles</span>
+          <span>✓ Scheduling</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+          <a href="https://github.com/fahisrahman" class="project-link secondary" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <div class="section-header reveal">
+    <div class="section-label">Experience</div>
+    <h2 class="section-title">Work <span>Journey</span></h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-period">2023 — 2024</div>
+        <div class="timeline-company">SMEC Labs</div>
+        <div class="timeline-role">Python Full Stack Developer Intern</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Built and maintained Django web applications with REST API integrations</li>
+            <li>Developed backend logic for e-commerce and booking platforms</li>
+            <li>Implemented JWT authentication and user management systems</li>
+            <li>Collaborated on database design using MySQL and PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-item reveal reveal-delay-1">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-period">2022 — 2023</div>
+        <div class="timeline-company">Talrop</div>
+        <div class="timeline-role">Frontend Development Intern</div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Designed and built responsive UI components using HTML, CSS, and JavaScript</li>
+            <li>Worked with Bootstrap and React to create modern, mobile-first interfaces</li>
+            <li>Collaborated closely with backend developers to integrate APIs into frontend views</li>
+            <li>Improved page performance and cross-browser compatibility</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education">
+  <div class="section-header reveal">
+    <div class="section-label">Education</div>
+    <h2 class="section-title">Academic <span>Background</span></h2>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card reveal reveal-delay-1">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+      <div class="edu-school">Jamiya Nadwiyya Arts & Science College</div>
+      <div class="edu-year">2021 — 2024</div>
+    </div>
+    <div class="edu-card reveal reveal-delay-2">
+      <div class="edu-icon">📚</div>
+      <div class="edu-degree">Higher Secondary Education</div>
+      <div class="edu-school">Computer Science Stream</div>
+      <div class="edu-year">2019 — 2021</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-header reveal">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+    <p class="section-sub">Open to new opportunities, freelance projects, and interesting collaborations.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="reveal">
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">fahisrahmanp@email.com</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">+91 7736859589</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Kerala, India</div>
+        </div>
+      </div>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/fahis-rahman-p/" target="_blank" class="social-btn" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/fahisrahmanp" target="_blank" class="social-btn" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="Portfolio">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="contact-form reveal reveal-delay-1">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">First Name</label>
+          <input type="text" class="form-input" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name</label>
+          <input type="text" class="form-input" placeholder="Doe">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" placeholder="john@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Subject</label>
+        <input type="text" class="form-input" placeholder="Job Opportunity / Project">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea class="form-input" rows="4" placeholder="Tell me about the project or opportunity..."></textarea>
+      </div>
+      <button class="form-submit" id="submit-btn">Send Message →</button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>Designed & Built by <span>Fahis Rahman P</span> · Kerala, India · 2024</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
